@@ -1,0 +1,1 @@
+week นี้ได้รับ mini project มา โดยทำตาม requirement ของอาทิตย์นี้ ทำรับobject ใส่ array
