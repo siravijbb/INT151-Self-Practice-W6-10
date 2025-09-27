@@ -16,7 +16,18 @@ parent.appendChild(pElement3)
 
 ////
 
-let secondparrent = document.getElementById('self') // create
-let lielem = document.createElement('ol')
-lielem.innerHTML = '<li> Hello WOrd </li>'
-secondparrent.appendChild(lielem)
+let secondparrent = document.getElementById('self') // create selector to select parrent
+let lielem = document.createElement('ol') // create separate element we want to use
+lielem.innerHTML = '<li> Hello WOrd </li>' //  inner of inner
+secondparrent.appendChild(lielem) // insert to parrent
+
+
+let pelemt= document.createElement('p')
+pelemt.setAttribute('id','helloword')
+let apprentinner = document.createElement('div')
+apprentinner.innerHTML = 'inner of sekai'
+pelemt.innerHTML = 'Hello Sekai!'
+
+// secondparrent.appendChild(pelemt.appendChild(apprentinner)) // cant
+pelemt.appendChild(apprentinner)
+secondparrent.appendChild(pelemt)
