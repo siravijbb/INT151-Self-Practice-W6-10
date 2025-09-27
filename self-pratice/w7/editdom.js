@@ -16,5 +16,7 @@ parent.appendChild(pElement3)
 
 ////
 
-let secondparrent = document.getElementById('demo')
+let secondparrent = document.getElementById('self') // create
 let lielem = document.createElement('ol')
+lielem.innerHTML = '<li> Hello WOrd </li>'
+secondparrent.appendChild(lielem)
