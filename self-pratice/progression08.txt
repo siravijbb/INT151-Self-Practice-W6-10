@@ -1,0 +1,1 @@
+this week ได้ลองเอาfunction forEachมาใส่กับevent listener เพื่อรับeven จากbutton มาเปีลี่ยนสีboxครับ
