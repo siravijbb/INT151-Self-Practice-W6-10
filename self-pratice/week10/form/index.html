@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="cookieUtils.js" type="module"></script>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+<form>
+    <div class="box" id="box1">
+        <h3>Box 1</h3>
+        <input id="bgcolor" type="color">
+    </div>
+
+    <div class="box" id="box2">
+        <input id="fontcolor" type="color">
+    </div>
+
+    <div>
+        <input type="radio" id="small" name="size" value="small" />
+        <label for="small">Small</label>
+    </div>
+
+    <div>
+        <input type="radio" id="medium" name="size" value="medium" />
+        <label for="medium">Medium</label>
+    </div>
+
+    <div>
+        <input type="radio" id="large" name="size" value="large" />
+        <label for="large">Large</label>
+    </div>
+
+    <button type="submit">Submit</button>
+
+</form>
+</body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+    }
+
+
+
+
+
+    input[type="color"] {
+        width: 60px;
+        height: 40px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type="radio"] {
+        margin-right: 8px;
+    }
+
+    label {
+        margin-right: 20px;
+        cursor: pointer;
+    }
+
+    div {
+        margin-bottom: 15px;
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+</style>
+</html>

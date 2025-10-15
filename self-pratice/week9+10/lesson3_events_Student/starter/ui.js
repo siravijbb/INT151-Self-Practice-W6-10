@@ -20,7 +20,7 @@ confirmBtn.addEventListener('click', e => {
     let { id,content, author } = addQuote(content, author)
     let objq = {
         id:id,
-        content:content
+        content:content,
         author:author
     }
     createQuoteElement(objq)
