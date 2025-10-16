@@ -10,11 +10,12 @@
 <body>
 <form>
     <div class="box" id="box1">
-        <h3>Box 1</h3>
+        <h3>Background Color</h3>
         <input id="bgcolor" type="color">
     </div>
 
     <div class="box" id="box2">
+        <h3>Font Color</h3>
         <input id="fontcolor" type="color">
     </div>
 
@@ -29,7 +30,7 @@
     </div>
 
     <div>
-        <input type="radio" id="large" name="size" value="large" />
+        <input type="radio" id="large" name="size" value="large" checked/>
         <label for="large">Large</label>
     </div>
 
@@ -48,7 +49,18 @@
 
 
 
+    .box {
+        background-color: #e9ecef;
+        border: 2px solid #dee2e6;
+        border-radius: 6px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
 
+    .box h3 {
+        margin-top: 0;
+    }
 
     input[type="color"] {
         width: 60px;
